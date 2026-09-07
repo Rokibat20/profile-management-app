@@ -53,8 +53,3 @@ A responsive profile management application built with vanilla JavaScript. Users
 - Implementing create, update, and delete functionality
 - Building a responsive user interface
 
-## Author
-
-**Roqibat Adegoke**
-
-Frontend Developer | UI/UX Enthusiast
