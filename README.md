@@ -3,8 +3,9 @@
 A responsive profile management application built with vanilla JavaScript. Users can create, view, edit, and delete their profile while their information persists using the browser's localStorage.
 
 ## Live Demo
+## Live Demo
 
-[View Live Demo](YOUR-LIVE-DEMO-LINK)
+[View Live Demo](https://rokibat20.github.io/profile-management-app/)
 
 ## Preview
 
