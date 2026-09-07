@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 * {
     margin: 0;
@@ -31,9 +30,7 @@ body {
 }
 
 
-/* =================================
-   DASHBOARD
-================================= */
+
 
 .dashboard {
     background: #ffffff;
@@ -50,9 +47,6 @@ body {
 }
 
 
-/* =================================
-   TOP HEADER
-================================= */
 
 .dashboard::before {
     content: "";
@@ -82,10 +76,6 @@ body {
     padding: 0 50px 35px;
 }
 
-
-/* =================================
-   PROFILE AREA
-================================= */
 
 .profile-image {
     display: block;
@@ -118,9 +108,7 @@ body {
 }
 
 
-/* =================================
-   INFORMATION
-================================= */
+
 
 .information {
     border-top: 1px solid #e2dfd8;
@@ -171,9 +159,6 @@ body {
 }
 
 
-/* =================================
-   BUTTONS
-================================= */
 
 .profile-buttons {
     display: flex;
@@ -228,9 +213,7 @@ body {
 }
 
 
-/* =================================
-   EMPTY PROFILE
-================================= */
+
 
 .empty-profile {
     background: #ffffff;
@@ -280,10 +263,6 @@ body {
     cursor: pointer;
 }
 
-
-/* =================================
-   MOBILE
-================================= */
 
 @media (max-width: 700px) {
 
