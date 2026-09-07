@@ -8,11 +8,17 @@ A responsive profile management application built with vanilla JavaScript. Users
 
 ## Preview
 
-![create-profile](./screenshots/create-profile.png)
+### Create Profile
 
-![profile-dashboard](./screenshots/profile-dashboard.png)
+![Create Profile](./screenshots/create-profile.png)
 
-![edit-profile](./screenshots/edit-profile.png)
+### Profile Dashboard
+
+![Profile Dashboard](./screenshots/profile-dashboard.png)
+
+### Edit Profile
+
+![Edit Profile](./screenshots/edit-profile.png)
 ## Features
 
 - Create a profile
