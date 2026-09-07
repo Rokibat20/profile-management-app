@@ -1,0 +1,344 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f1eb;
+    color: #20201e;
+    font-family: "DM Sans", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+#container {
+    width: 100%;
+    max-width: 900px;
+}
+
+
+
+#profileForm {
+    background: #ffffff;
+
+    width: 100%;
+
+    padding: 55px;
+
+    border-radius: 6px;
+
+    border: 1px solid #dedbd4;
+
+    box-shadow: 0 18px 45px rgba(35, 34, 30, 0.08);
+}
+
+
+#profileForm h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #20201e;
+
+    margin-bottom: 8px;
+}
+
+#profileForm > p {
+    color: #77746e;
+
+    font-size: 15px;
+
+    margin-bottom: 42px;
+}
+
+
+
+.image-section {
+    background: #f7f5f0;
+
+    border: 1px dashed #bdb8ad;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 5px;
+}
+
+.image-section label {
+    font-weight: 600;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+    color: #373631;
+}
+
+#previewImage {
+    width: 105px;
+    height: 105px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d4d0c7;
+}
+
+#imageUpload {
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #55514a;
+}
+
+
+
+#profileForm {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 28px;
+}
+
+#profileForm h1,
+#profileForm > p,
+.image-section,
+.button-container,
+#successMessage {
+    grid-column: 1 / -1;
+}
+
+
+
+.field {
+    margin-bottom: 25px;
+}
+
+.field label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #393832;
+
+    margin-bottom: 8px;
+}
+
+.field input,
+.field select {
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d8d5ce;
+
+    border-radius: 4px;
+
+    background: #fff;
+
+    color: #292824;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.field input::placeholder {
+    color: #aaa69d;
+}
+
+.field input:focus,
+.field select:focus {
+    border-color: #33312d;
+
+    box-shadow: 0 0 0 3px rgba(51, 49, 45, 0.08);
+}
+
+
+
+
+.password-wrapper {
+    display: flex;
+
+    gap: 8px;
+}
+
+.password-wrapper input {
+    flex: 1;
+}
+
+.password-wrapper button {
+    border: 1px solid #d8d5ce;
+
+    background: #f4f2ed;
+
+    color: #3b3934;
+
+    padding: 0 17px;
+
+    border-radius: 4px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.password-wrapper button:hover {
+    background: #e9e6df;
+}
+
+
+
+.error {
+    display: block;
+
+    min-height: 17px;
+
+    margin-top: 6px;
+
+    color: #b43a32;
+
+    font-size: 12px;
+}
+
+.invalid {
+    border-color: #b43a32 !important;
+}
+
+
+.button-container {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+.button-container button {
+    height: 46px;
+
+    padding: 0 25px;
+
+    border-radius: 4px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.submit-button {
+    background: #24231f;
+
+    color: #ffffff;
+
+    border: 1px solid #24231f;
+}
+
+.submit-button:hover {
+    background: #000000;
+
+    transform: translateY(-1px);
+}
+
+.reset-button {
+    background: transparent;
+
+    color: #4d4a43;
+
+    border: 1px solid #cfcac0;
+}
+
+.reset-button:hover {
+    background: #f4f1eb;
+}
+
+
+
+#successMessage {
+    text-align: right;
+
+    margin-top: 10px;
+
+    color: #3d7651;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+
+        align-items: flex-start;
+    }
+
+    #profileForm {
+        grid-template-columns: 1fr;
+
+        padding: 30px 22px;
+
+        margin-top: 20px;
+    }
+
+    #profileForm h1 {
+        font-size: 32px;
+    }
+
+    .image-section,
+    .button-container,
+    #successMessage {
+        grid-column: auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container button {
+        width: 100%;
+    }
+}
